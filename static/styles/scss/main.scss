@@ -11,6 +11,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
     @include headers;
 }
+
+.me-img {
+    border-radius: 1rem;
+    -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(60%);
+}
 // Media Queries
 
 
