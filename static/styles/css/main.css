@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap");
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Titillium Web", sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-style: normal;
+}
 
 /*# sourceMappingURL=main.css.map */
