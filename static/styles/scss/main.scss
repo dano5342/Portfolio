@@ -4,7 +4,7 @@
 @import 'colors.scss';
 @import 'mixins.scss';
 
-// Main Styling (web 1920/1080)
+/*------ Main Styling (web 1920/1080) -----*/
 body {
     @include text;
     background-color: $dark;
@@ -26,9 +26,17 @@ h1, h2, h3, h4, h5, h6 {
     filter: grayscale(60%);
     margin-left: 15%;
 }
-
+/* ------ Card Styles ------ */
 .card {
     background-color: $coal;
+    margin: 4px;
+    &:hover {
+        transform: scale(1.2);
+        transition: ease-in-out 0.5s;
+        box-shadow: 0.8px 0.5px 0.5px $epink;
+        z-index: 999;
+        color: $osilver;
+    }
 }
 
 .card .card-reveal {
@@ -41,6 +49,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-floating i {
     background-color: $epink;
+    &:hover {
+        background-color: $rosa;
+        color: $osilver;
+        transition: ease-in-out 0.5s;
+    }
 }
 
 .second {
@@ -52,5 +65,14 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 85px;
     max-height: 85px;
 }
+
+.divider {
+    box-shadow: 2px 2px 2px $epink;
+}
+#canv {
+    display: block;
+    box-shadow: 5px 3px 3px $rosa
+}
+/* ------ Card styles end  ------ */ 
 // Media Queries
 
