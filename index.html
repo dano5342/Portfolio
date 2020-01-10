@@ -26,8 +26,8 @@
         <section>
             <nav class="navbar-container">
                 <div class="nav-wrapper">
-                    <ul id="nav-mobile" class="center hide-on-med-and-down">
-                        <li><a href="#">About</a></li>
+                    <ul id="nav-mobile" class=" hide-on-med-and-down">
+                        <li class=><a href="#">About</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Skills</a></li>
                         <li><a href="#">Contact</a></li>
@@ -35,41 +35,21 @@
                 </div>
             </nav>
             <!-- Side Nav -->
-            <ul id="slide-out" class="sidenav">
-                <li>
-                    <div class="user-view">
-                        <div class="background">
-                            <img src="images/office.jpg">
-                        </div>
-                        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                        <a href="#name"><span class="white-text name">John Doe</span></a>
-                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-                    </div>
-                </li>
-                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-                <li><a href="#!">Second Link</a></li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-                <li><a class="subheader">Subheader</a></li>
-                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-            </ul>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons"></i></a>
         </section>
         <!-- Landing Image -->
         <section>
             <header class="lnd-image">
-                <img src="https://www.fillmurray.com/1920/1080" alt="fillmurray">
+                <img class="responsive-img" src="media/images/code.jpg" alt="code">
             </header>
         </section>
         <!-- Main Content -->
         <section id="about">
             <h2 class="center-align"><i class="fas fa-chevron-left"></i> About <i class="fas fa-chevron-right"></i></h2>
             <div class="row">
-                <div class="col s4">
-                    <img class="materialboxed me-img" width="450" height="375" src="media/images/Me.jpeg">
+                <div class="col s-12 m-4">
+                    <img class="materialboxed responsive-img" width="450" height="375" src="media/images/Me.jpeg">
                 </div>
-                <div class="col s8">
+                <div class="col s-12 m-8">
                     <div class="container">
                         <div class="row">
                             <h5>
@@ -117,12 +97,12 @@
             <h2 class="center-align"><i class="fas fa-chevron-left"></i> portfolio <i class="fas fa-chevron-right"></i>
             </h2>
             <div class="container">
-                <div class="row">
-                    <div class="card-deck">
-                        <div class="col s-12 m-7 l-4">
+                <div class="card-deck">
+                    <div class="row">
+                        <div class="col s12 m6 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="">
+                                    <img class="activator responsive-img" src="media/images/ms1.png">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Card Title<i
@@ -140,10 +120,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s-12 m-7 l-4">
+                        <div class="col s12 m6 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="images/office.jpg">
+                                    <img class="activator responsive-img" src="media/images/ms2.png">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Card Title<i
@@ -161,11 +141,54 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s-12 m-7 l-4">
-
+                        <div class="col s12 m6 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="images/office.jpg">
+                                    <img class="activator responsive-img" src="media/images/summerhack.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Card Title<i
+                                            class="material-icons right">more_vert</i></span>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                            class="material-icons">add</i></a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i
+                                            class="material-icons right">close</i></span>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked
+                                        on.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m6 l4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator responsive-img" src="media/images/ms3.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Card Title<i
+                                            class="material-icons right">more_vert</i></span>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                            class="material-icons">add</i></a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i
+                                            class="material-icons right">close</i></span>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked
+                                        on.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator responsive-img" src="media/images/ms4.png">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Card Title<i
@@ -185,7 +208,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section id="skills">
             <h2 class="center-align"><i class="fas fa-chevron-left"></i> skills <i class="fas fa-chevron-right"></i>
