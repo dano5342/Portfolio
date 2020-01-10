@@ -28,12 +28,25 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 15%;
 }
 
+.card {
+  background-color: #474747;
+}
+
+.card .card-reveal {
+  background-color: #474747;
+}
+
 .card-image {
   min-height: 160px;
 }
 
+.btn-floating i {
+  background-color: #E8175D;
+}
+
 .second {
   margin-right: 55px;
+  background-color: #CC527A;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -27,13 +27,25 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 15%;
 }
 
+.card {
+    background-color: $coal;
+}
+
+.card .card-reveal {
+    background-color: $coal;
+}
+
 .card-image { //Overwrite the card image min size as this was pushing cards to be bigger/smaller
     min-height: 160px;
 }
 
+.btn-floating i {
+    background-color: $epink;
+}
+
 .second {
     margin-right: 55px;
+    background-color: $rosa
 }
 // Media Queries
-
 
