@@ -5,11 +5,15 @@
 @import 'mixins.scss';
 
 /*------ Main Styling (web 1920/1080) -----*/
+html {
+    scroll-behavior: smooth;
+    transition: 10s
+
+}
 body {
     @include text;
     background-color: $dark;
     color: $osilver;
-    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
