@@ -7,9 +7,13 @@
 // Main Styling (web 1920/1080)
 body {
     @include text;
+    background-color: $dark;
+    color: $osilver;
 }
+
 h1, h2, h3, h4, h5, h6 {
     @include headers;
+    color: $osilver;
 }
 
 .landing-image  {
@@ -21,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
     filter: grayscale(60%);
     margin-left: 15%;
+}
+
+.card-image { //Overwrite the card image min size as this was pushing cards to be bigger/smaller
+    min-height: 160px;
 }
 
 

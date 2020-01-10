@@ -1,16 +1,6 @@
 // Color Mixins
-@mixin osilver {
-    color: #A8A7A7
-}
-@mixin rosa {
-    color: #CC527A
-}
-@mixin epink {
-    color: #E8175D;
-}
-@mixin coal {
-    color: #474747;
-}
-@mixin dark {
-    color: #363636;
-}
+$osilver: #A8A7A7;
+$rosa: #CC527A;
+$epink: #E8175D;
+$coal:  #474747;
+$dark: #363636;
