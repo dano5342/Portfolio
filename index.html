@@ -22,6 +22,7 @@
         <section>
             <nav class="navbar-container">
                 <div class="nav-wrapper">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class=" hide-on-med-and-down">
                         <li class=><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
@@ -31,11 +32,20 @@
                 </div>
             </nav>
             <!-- Side Nav -->
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </section>
         <!-- Landing Image -->
         <section>
-            <header class="lnd-image">
+            <header class="lnd-image hide-on-small-only">
                 <img class="responsive-img" src="media/images/code.jpg" alt="code">
+            </header>
+            <header class="lnd-image hide-on-med-and-up">
+                <img class="responsive-img" src="media/images/logo.png" alt="DE Logo">
             </header>
         </section>
         <!-- Main Content -->
@@ -129,6 +139,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="divider hide-on-med-and-up"></div>
                         <div class="col s12 m6 l4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
@@ -289,14 +300,48 @@
             </h2>
 
         </section>
+        <div class="divider"></div>
         <section id="contact">
             <h2 class="center-align"><i class="fas fa-chevron-left"></i> contact <i class="fas fa-chevron-right"></i>
             </h2>
+            <h4 class="center-align">Got a cool idea, Want to collaborate?</h4>
+            <form class="hide" action="mailto:ellis.daniel0@gmail.com">
+                <input type="text" name="name">
+                <input type="email" name="email">
+                <input type="text" name=subjects>
+                <button action="submit">SEND</button>
+            </form>
+            <p class="center-align text"><a href="mailto:ellis.daniel0@gmail.com" class="waves-effect waves-light btn-large email">Mail me here</a></p>
         </section>
         <!-- Footer -->
+        <div class="divider"></div>
         <section>
-            <footer>
-
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row center-align">
+                        <div class="col l4 offset-l4 s12">
+                            <p class="center-align">
+                                <span class="d-circle">
+                                    <a href="https://www.facebook.com/d4n.3llis" target="_blank"><i class="fab fa-facebook-f i-space"></i></a>
+                                </span>
+                                <span class="d-circle"> 
+                                    <a href="https://twitter.com/DanielE35659689" target="_blank"><i class="fab fa-twitter i-space"></i></a>
+                                </span>
+                                <span class="d-circle"> 
+                                    <a href="https://github.com/dano5342" target="_blank"><i class="fab fa-github i-space"></i></a>
+                                </span>
+                                <span class="d-circle"> 
+                                    <a href="https://www.linkedin.com/in/daniel-ellis-52747483/" target="_blank"><i class="fab fa-linkedin i-space"></i></a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container center-align">
+                        © 2020 Daniel Ellis
+                    </div>
+                </div>
             </footer>
         </section>
     </main>

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   var canv = document.getElementById("canv");
   var ctrl = canv.getContext("2d");
 
@@ -34,4 +35,9 @@ $(document).ready(function(){
         }
 
         setInterval(draw, 35);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
 });

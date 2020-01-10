@@ -6,6 +6,7 @@ body {
   font-style: normal;
   background-color: #363636;
   color: #A8A7A7;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,16 +27,17 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-filter: grayscale(60%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(60%);
-  margin-left: 15%;
 }
 
 /* ------ Card Styles ------ */
 .card {
   background-color: #474747;
   margin: 4px;
+  margin-bottom: 22px;
+  transition: ease-out 0.5s;
 }
 .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: ease-in-out 0.5s;
   box-shadow: 0.8px 0.5px 0.5px #E8175D;
   z-index: 999;
@@ -78,6 +80,38 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 5px 3px 3px #CC527A;
 }
 
+.email {
+  background-color: #E8175D;
+}
+
 /* ------ Card styles end  ------ */
+/* ----- Footer ----- */
+.page-footer {
+  background-color: #474747;
+}
+
+.d-circle {
+  background: #363636;
+  color: #E8175D;
+  font-size: 12px;
+  padding: 6px 9px;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+.d-circle:hover {
+  transform: scale(1.3);
+  transition: ease-in-out 0.5s;
+}
+
+span.d-circle a {
+  color: inherit;
+}
+
+.i-space {
+  margin: 2px;
+}
 
 /*# sourceMappingURL=main.css.map */

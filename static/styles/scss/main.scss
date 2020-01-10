@@ -9,6 +9,7 @@ body {
     @include text;
     background-color: $dark;
     color: $osilver;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,14 +25,16 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 1rem;
     -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
     filter: grayscale(60%);
-    margin-left: 15%;
+    //margin-left: 15%;
 }
 /* ------ Card Styles ------ */
 .card {
     background-color: $coal;
     margin: 4px;
+    margin-bottom: 22px;
+    transition: ease-out 0.5s;
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition: ease-in-out 0.5s;
         box-shadow: 0.8px 0.5px 0.5px $epink;
         z-index: 999;
@@ -73,6 +76,39 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     box-shadow: 5px 3px 3px $rosa
 }
+
+.email {
+    background-color: $epink;
+}
 /* ------ Card styles end  ------ */ 
+/* ----- Footer ----- */
+
+.page-footer  {
+    background-color: $coal;
+}
+
+
+.d-circle {
+    background: $dark;
+    color: $epink; 
+    font-size: 12px;
+    padding: 6px 9px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    &:hover{
+        transform: scale(1.3);
+        transition: ease-in-out 0.5s;
+    }
+}
+span.d-circle a {
+    color: inherit;
+}
+
+.i-space{
+    margin: 2px;
+}
 // Media Queries
 
