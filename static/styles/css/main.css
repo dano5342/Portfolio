@@ -49,4 +49,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #CC527A;
 }
 
+.smol {
+  max-width: 85px;
+  max-height: 85px;
+}
+
 /*# sourceMappingURL=main.css.map */
