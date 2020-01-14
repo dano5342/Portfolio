@@ -13,7 +13,12 @@ body {
   color: #A8A7A7;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Titillium Web", sans-serif;
   text-transform: capitalize;
   font-weight: 600;
@@ -33,7 +38,27 @@ h1, h2, h3, h4, h5, h6 {
   filter: grayscale(60%);
 }
 
+.squared {
+  border-radius: 70%;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  border: 3px dotted green;
+}
+
 /* ------ Card Styles ------ */
+#cards {
+  visibility: hidden;
+}
+
+.slideLeft {
+  animation-name: slideLeft;
+  -webkit-animation-name: slideLeft;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible !important;
+}
+
 .card {
   background-color: #474747;
   margin: 4px;
@@ -71,8 +96,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .smol {
-  max-width: 85px;
-  max-height: 85px;
+  max-width: 75px;
+  max-height: 75px;
+}
+
+.dc {
+  max-width: 55px;
+  max-height: 40px;
+  margin-left: 12px;
+  margin-bottom: 18px;
 }
 
 .divider {
@@ -116,6 +148,27 @@ span.d-circle a {
 
 .i-space {
   margin: 2px;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slideLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

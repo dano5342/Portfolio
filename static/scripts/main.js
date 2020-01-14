@@ -43,6 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
 });
 
-document.getElementById('about').scrollIntoView({
-  behavior: 'smooth'
-});
+window.onscroll = function() {scroller()};
+
+function scroller(){
+  if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200){
+    document.getElementById("cards").className = "slideLeft";
+  }
+}
