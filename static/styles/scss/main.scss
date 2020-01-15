@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    padding-top: 76px;
+    padding-top: 56px;
 }
 
 h1,
@@ -123,7 +123,6 @@ nav {
     background-color: $epink;
 }
 
-/* ------ Card styles end  ------ */
 
 /*------- Skills Section ------- */
 
@@ -182,6 +181,10 @@ span.d-circle a {
 
 .i-space {
     margin: 2px;
+}
+/*---------------- Contact Styling --------------------- */
+.box {
+    border: 1px solid $rosa;
 }
 
 // Media Queries
