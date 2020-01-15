@@ -27,8 +27,12 @@ h5,
 h6 {
     @include headers;
     color: $osilver;
+    text-shadow: 1px 1px $rosa;
 }
+.material-icons {
+    text-shadow: 1px 1px $rosa;
 
+}
 nav {
     z-index: 999;
     background-color: $epink;

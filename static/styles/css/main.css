@@ -28,6 +28,11 @@ h6 {
   font-weight: 600;
   font-style: normal;
   color: #A8A7A7;
+  text-shadow: 1px 1px #CC527A;
+}
+
+.material-icons {
+  text-shadow: 1px 1px #CC527A;
 }
 
 nav {
