@@ -17,28 +17,29 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar-container pushpin">
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class=" hide-on-med-and-down">
+                    <li class=><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Side Nav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </section>
     <main>
-        <!-- Navbar -->
-        <section>
-            <nav class="navbar-container pushpin">
-                <div class="nav-wrapper">
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class=" hide-on-med-and-down">
-                        <li class=><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- Side Nav -->
-            <ul class="sidenav" id="mobile-demo">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </section>
+
         <!-- Landing Image -->
         <section>
             <header class="lnd-image hide-on-small-only">
@@ -50,7 +51,8 @@
         </section>
         <!-- Main Content -->
         <section id="about">
-            <h2 class="center-align"><i class="fas fa-chevron-left"></i> About <i class="fas fa-chevron-right"></i></h2>
+            <h2 class="center-align"><i class="fas fa-chevron-left"></i> About <i class="fas fa-chevron-right"></i>
+            </h2>
             <div class="row">
                 <div class="col s12 m4">
                     <img class="materialboxed responsive-img me-img" width="450" height="375"
@@ -89,10 +91,13 @@
                             </table>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, dicta, quidem
-                                asperiores qui eum explicabo aperiam atque aut ut magni saepe quo repellat optio odio
-                                totam animi dolor officia fugit earum non laborum excepturi nulla. Eum, quos. Debitis
+                                asperiores qui eum explicabo aperiam atque aut ut magni saepe quo repellat optio
+                                odio
+                                totam animi dolor officia fugit earum non laborum excepturi nulla. Eum, quos.
+                                Debitis
                                 aliquid assumenda eveniet cumque. Consectetur voluptatum numquam quod dicta, quaerat
-                                excepturi cupiditate modi, minus dolorum similique voluptate esse! Sunt, ipsam ducimus
+                                excepturi cupiditate modi, minus dolorum similique voluptate esse! Sunt, ipsam
+                                ducimus
                                 rerum soluta sed quisquam distinctio ea maiores. Harum minima consequatur earum
                                 consequuntur facere repellendus ut quod?
                             </p>
@@ -130,10 +135,13 @@
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">The Monkees<i
                                             class="material-icons right">close</i></span>
-                                    <p>My first project written in basic HTML5 and CSS3, this was a culmination of about
-                                        a months worth of learning the basics and trying to put it all together with the
+                                    <p>My first project written in basic HTML5 and CSS3, this was a culmination of
+                                        about
+                                        a months worth of learning the basics and trying to put it all together with
+                                        the
                                         UI/UX
-                                        topics also being covered, utilising semantic web techniques to ensure full page
+                                        topics also being covered, utilising semantic web techniques to ensure full
+                                        page
                                         functionality.
                                     </p>
                                     <span class="center-align">
@@ -195,7 +203,8 @@
                                     <span class="card-title grey-text text-darken-4">Summer Hackathon<i
                                             class="material-icons right">close</i></span>
                                     <p>
-                                        My first project working with others in a team, we had 12 hours to put together
+                                        My first project working with others in a team, we had 12 hours to put
+                                        together
                                         an app based on summer sporting activities.
                                         We put together some fantastic UI/UX design, coupled with some JavaScript to
                                         create a quiz that would show you what your "best fit"
@@ -233,7 +242,8 @@
                                     <p>
                                         A webapp hosted on Heroku and utilising MongoDB for a NOSQL backend. I built
                                         this project using the microframework - Flask for python
-                                        This was a showcase of some new SQL skills I learnt to work with data, creating
+                                        This was a showcase of some new SQL skills I learnt to work with data,
+                                        creating
                                         a simplistic but functional CRUD cookbook that enables
                                         users to CRUD their favourite recipes on the web.
                                     </p>
@@ -270,11 +280,14 @@
                                             class="material-icons right">close</i></span>
                                     <p>
                                         This was the final project I created for my Diploma, it was written in the
-                                        Django framework for python and utilised more SQL, SQLite for the development
-                                        version and PostgreSQL for the deployment version. This introduced me to Models
+                                        Django framework for python and utilised more SQL, SQLite for the
+                                        development
+                                        version and PostgreSQL for the deployment version. This introduced me to
+                                        Models
                                         and inter-relational databases, allowing me to see how these objects
                                         work with each other on the back-end. It is a fully functional E-Commerce
-                                        application also hosted on Heroku, whilst also utilising AWS S3 Buckets to host
+                                        application also hosted on Heroku, whilst also utilising AWS S3 Buckets to
+                                        host
                                         my static files elsewhere.
                                     </p>
                                     <span>
@@ -316,20 +329,26 @@
                     <div class="chart" data-percent="45">Django</div>
                 </div>
             </div>
-            <div class="container hide-on-med-and-up">
+            <div class="container hide-on-med-and-up center-align">
                 <div class="row">
-                    <div class="col s-12">
-                        <div class="chart2" data-percent="90"><small>HTML5</small></div>
-                    </div>
-
-                        <div class="chart2" data-percent='75'><small>CSS3</small></div>
-                        <div class="chart2" data-percent='80'><small>SASS</small></div>
-                        <div class="chart2" data-percent='69'><small>JS</small></div>
-                        <div class="chart2" data-percent='65'><small>jQuery</small></div>
-                        <div class="chart2" data-percent="75"><small>Python</small></div>
-                        <div class="chart2" data-percent="40"><small>Flask</small></div>
-                        <div class="chart2" data-percent="45"><small>Django</small></div>
+                    <div class="chart2" data-percent="90"><small>HTML5</small></div>
+                    <div class="chart2" data-percent='75'><small>CSS3</small></div>
                 </div>
+                <div class="row">
+                    <div class="chart2" data-percent='80'><small>SASS</small></div>
+                    <div class="chart2" data-percent='69'><small>JS</small></div>
+                </div>
+                <div class="row">
+                    <div class="chart2" data-percent='65'><small>jQuery</small></div>
+                    <div class="chart2" data-percent="75"><small>Python</small></div>
+                </div>
+                <div class="row">
+                    <div class="chart2" data-percent="40"><small>Flask</small></div>
+                    <div class="chart2" data-percent="45"><small>Django</small></div>
+                </div>
+
+
+
             </div>
         </section>
         <div class="divider"></div>
@@ -346,42 +365,42 @@
             <p class="center-align text"><a href="mailto:ellis.daniel0@gmail.com"
                     class="waves-effect waves-light btn-large email">Mail me here</a></p>
         </section>
-        <!-- Footer -->
-        <div class="divider"></div>
-        <section>
-            <footer class="page-footer">
-                <div class="container">
-                    <div class="row center-align">
-                        <div class="col l4 offset-l4 s12">
-                            <p class="center-align">
-                                <span class="d-circle">
-                                    <a href="https://www.facebook.com/d4n.3llis" target="_blank"><i
-                                            class="fab fa-facebook-f i-space"></i></a>
-                                </span>
-                                <span class="d-circle">
-                                    <a href="https://twitter.com/DanielE35659689" target="_blank"><i
-                                            class="fab fa-twitter i-space"></i></a>
-                                </span>
-                                <span class="d-circle">
-                                    <a href="https://github.com/dano5342" target="_blank"><i
-                                            class="fab fa-github i-space"></i></a>
-                                </span>
-                                <span class="d-circle">
-                                    <a href="https://www.linkedin.com/in/daniel-ellis-52747483/" target="_blank"><i
-                                            class="fab fa-linkedin i-space"></i></a>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-copyright">
-                    <div class="container center-align">
-                        © 2020 Daniel Ellis
-                    </div>
-                </div>
-            </footer>
-        </section>
     </main>
+    <!-- Footer -->
+    <div class="divider"></div>
+    <section>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row center-align">
+                    <div class="col l4 offset-l4 s12">
+                        <p class="center-align">
+                            <span class="d-circle">
+                                <a href="https://www.facebook.com/d4n.3llis" target="_blank"><i
+                                        class="fab fa-facebook-f i-space"></i></a>
+                            </span>
+                            <span class="d-circle">
+                                <a href="https://twitter.com/DanielE35659689" target="_blank"><i
+                                        class="fab fa-twitter i-space"></i></a>
+                            </span>
+                            <span class="d-circle">
+                                <a href="https://github.com/dano5342" target="_blank"><i
+                                        class="fab fa-github i-space"></i></a>
+                            </span>
+                            <span class="d-circle">
+                                <a href="https://www.linkedin.com/in/daniel-ellis-52747483/" target="_blank"><i
+                                        class="fab fa-linkedin i-space"></i></a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container center-align">
+                    © 2020 Daniel Ellis
+                </div>
+            </div>
+        </footer>
+    </section>
     <!-- Scripts importing, custom and external libs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"

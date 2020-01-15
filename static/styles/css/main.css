@@ -13,6 +13,10 @@ body {
   color: #A8A7A7;
 }
 
+main {
+  padding-top: 76px;
+}
+
 h1,
 h2,
 h3,
