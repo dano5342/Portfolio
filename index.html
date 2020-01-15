@@ -20,7 +20,7 @@
     <main>
         <!-- Navbar -->
         <section>
-            <nav class="navbar-container">
+            <nav class="navbar-container pushpin">
                 <div class="nav-wrapper">
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class=" hide-on-med-and-down">
@@ -297,24 +297,40 @@
             </div>
         </section>
         <div class="divider"></div>
-        <section id="skills">
-            <canvas id="canv">
+        <canvas id="canv">
 
-            </canvas>
+        </canvas>
+        <section id="skills">
+
             <h2 class="center-align"><i class="fas fa-chevron-left"></i> skills <i class="fas fa-chevron-right"></i>
             </h2>
-
-            <div class="container">
-                <div class="chart" data-percent="90">HTML5</div>
-                <div class="chart" data-percent='75'>CSS3</div>
-                <div class="chart" data-percent='80'>SASS</div>
-                <div class="chart" data-percent='69'>JavaScript</div>
-                <div class="chart" data-percent='65'>jQuery</div>
-                <div class="chart" data-percent="75">Python</div>
-                <div class="chart" data-percent="40">Flask</div>
-                <div class="chart" data-percent="45">Django</div>
+            <div class="container hide-on-med-and-down">
+                <div id="charts">
+                    <div class="chart" data-percent="90">HTML5</div>
+                    <div class="chart" data-percent='75'>CSS3</div>
+                    <div class="chart" data-percent='80'>SASS</div>
+                    <div class="chart" data-percent='69'>JavaScript</div>
+                    <div class="chart" data-percent='65'>jQuery</div>
+                    <div class="chart" data-percent="75">Python</div>
+                    <div class="chart" data-percent="40">Flask</div>
+                    <div class="chart" data-percent="45">Django</div>
+                </div>
             </div>
+            <div class="container hide-on-med-and-up">
+                <div class="row">
+                    <div class="col s-12">
+                        <div class="chart2" data-percent="90"><small>HTML5</small></div>
+                    </div>
 
+                        <div class="chart2" data-percent='75'><small>CSS3</small></div>
+                        <div class="chart2" data-percent='80'><small>SASS</small></div>
+                        <div class="chart2" data-percent='69'><small>JS</small></div>
+                        <div class="chart2" data-percent='65'><small>jQuery</small></div>
+                        <div class="chart2" data-percent="75"><small>Python</small></div>
+                        <div class="chart2" data-percent="40"><small>Flask</small></div>
+                        <div class="chart2" data-percent="45"><small>Django</small></div>
+                </div>
+            </div>
         </section>
         <div class="divider"></div>
         <section id="contact">

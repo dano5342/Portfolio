@@ -1,15 +1,14 @@
-$(document).ready(function () {
-
+function matrix() {
   var canv = document.getElementById("canv");
   var ctrl = canv.getContext("2d");
 
-  canv.height = window.innerHeight;
+  canv.height = window.innerHeight * 0.8;
   canv.width = window.innerWidth;
 
   var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
   matrix = matrix.split("");
 
-  var font_size = 12;
+  var font_size = 14;
   var columns = canv.width / font_size;
 
   var drops = [];
@@ -20,7 +19,7 @@ $(document).ready(function () {
     ctrl.fillStyle = "rgba(0, 0, 0, 0.04)";
     ctrl.fillRect(0, 0, canv.width, canv.height);
 
-    ctrl.fillStyle = "#E8175D"; //green text
+    ctrl.fillStyle = "#E8175D"; //pink text from SCSS
     ctrl.font = font_size + "Titillium Web";
     for (var i = 0; i < drops.length; i++) {
 
@@ -32,10 +31,15 @@ $(document).ready(function () {
 
       drops[i]++;
     }
-  }
 
-  setInterval(draw, 35);
-});
+  }
+  setInterval(draw, 75);
+}
+// Call the matrix function
+$(document).ready(matrix());
+window.addEventListener("resize", matrix());
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
@@ -43,15 +47,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.pushpin');
+  var instances = M.Pushpin.init(elems);
+});
+
 window.onscroll = function () {
   scroller()
+  scroller2()
 };
 
 function scroller() {
-  if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+  if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
     document.getElementById("cards").className = "slideLeft";
   }
 }
+
+function scroller2() {
+  if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
+    document.getElementById("charts").className = "slideUp";
+  }
+}
+
 
 $(function () {
   $('.chart').easyPieChart({
@@ -70,5 +87,25 @@ $(function () {
 
   if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
     $('.chart').data('easyPieChart').enableAnimation();
+  };
+});
+
+$(function () {
+  $('.chart2').easyPieChart({
+    scaleColor: "#A8A7A7",
+    lineWidth: 15,
+    lineCap: 'butt',
+    barColor: '#E8175D',
+    trackColor: "#474747",
+    size: 90,
+    animate: ({
+      duration: 5500,
+      enabled: true
+    })
+  });
+  $('.chart2').data('easyPieChart').disableAnimation();
+
+  if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+    $('.chart2').data('easyPieChart').enableAnimation();
   };
 });

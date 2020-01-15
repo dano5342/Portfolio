@@ -25,6 +25,11 @@ h6 {
     color: $osilver;
 }
 
+nav {
+    z-index: 999;
+    background-color: $epink;
+}
+
 .landing-image {
     max-width: 100%;
     max-height: 75%;
@@ -33,9 +38,7 @@ h6 {
 .me-img {
     border-radius: 1rem;
     -webkit-filter: grayscale(60%);
-    /* Safari 6.0 - 9.0 */
     filter: grayscale(60%);
-    //margin-left: 15%;
 }
 
 .squared {
@@ -52,15 +55,6 @@ h6 {
     visibility: hidden;
 }
 
-.slideLeft {
-    animation-name: slideLeft;
-    -webkit-animation-name: slideLeft;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible !important;
-}
-
-
 .card {
     background-color: $coal;
     margin: 4px;
@@ -71,7 +65,7 @@ h6 {
         transform: scale(1.1);
         transition: ease-in-out 0.5s;
         box-shadow: 0.8px 0.5px 0.5px $epink;
-        z-index: 999;
+        z-index: 100;
         color: $osilver;
     }
 }
@@ -128,6 +122,13 @@ h6 {
 /* ------ Card styles end  ------ */
 
 /*------- Skills Section ------- */
+
+#charts {
+    visibility: hidden;
+    display: inline-block;
+    position: relative;
+}
+
 .chart {
     position: relative;
     display: inline-block;
@@ -136,7 +137,17 @@ h6 {
     font-size: 14px;
     text-align: center;
 }
-  
+
+
+.chart2 {
+    position: relative;
+    display: inline-block;
+    margin: 20px 10px;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}
+
 /* ----- Footer ----- */
 
 .page-footer {
@@ -171,8 +182,50 @@ span.d-circle a {
 
 // Media Queries
 
-//keyframes and Animations 
+/* ---------- KeyFrames and Animations  ----------- */
 
+//fade in from bottom
+.slideUp {
+    animation-name: slideUp;
+    display: inline-block;
+    position: relative;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible!important;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+// Slide in from right
+.slideLeft {
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible !important;
+}
 
 @keyframes slideLeft {
     0% {
