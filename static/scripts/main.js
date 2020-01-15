@@ -1,6 +1,6 @@
 function matrix() {
   var canv = document.getElementById("canv");
-  var ctrl = canv.getContext("2d");
+  var ctx = canv.getContext("2d");
 
   canv.height = window.innerHeight * 0.8;
   canv.width = window.innerWidth;
@@ -16,15 +16,15 @@ function matrix() {
     drops[i] = 1;
 
   function draw() {
-    ctrl.fillStyle = "rgba(0, 0, 0, 0.04)";
-    ctrl.fillRect(0, 0, canv.width, canv.height);
+    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+    ctx.fillRect(0, 0, canv.width, canv.height);
 
-    ctrl.fillStyle = "#E8175D"; //pink text from SCSS
-    ctrl.font = font_size + "Titillium Web";
+    ctx.fillStyle = "#E8175D"; //pink text from SCSS
+    ctx.font = font_size + "Titillium Web";
     for (var i = 0; i < drops.length; i++) {
 
       var text = matrix[Math.floor(Math.random() * matrix.length)];
-      ctrl.fillText(text, i * font_size, drops[i] * font_size);
+      ctx.fillText(text, i * font_size, drops[i] * font_size);
 
       if (drops[i] * font_size > canv.height && Math.random() > 0.975)
         drops[i] = 0;
@@ -64,7 +64,7 @@ function scroller() {
 }
 
 function scroller2() {
-  if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
+  if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
     document.getElementById("charts").className = "slideUp";
   }
 }
@@ -85,7 +85,7 @@ $(function () {
   });
   $('.chart').data('easyPieChart').disableAnimation();
 
-  if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+  if (document.body.scrollTop > 1200|| document.documentElement.scrollTop > 1200) {
     $('.chart').data('easyPieChart').enableAnimation();
   };
 });

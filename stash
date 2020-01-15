@@ -1,0 +1,6 @@
+ <header class="lnd-image hide-on-small-only">
+                <img class="responsive-img" src="media/images/code.jpg" alt="code">
+            </header>
+            <header class="lnd-image hide-on-med-and-up">
+                <img class="responsive-img" src="media/images/logo.png" alt="DE Logo">
+            </header>
